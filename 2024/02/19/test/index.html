@@ -3,7 +3,7 @@
 
 
 <head>
-    <meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="test, The Southern Reach">
     <meta name="description" content="并发事务问题
 
@@ -67,11 +67,11 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 
 <body>
-    <header class="navbar-fixed">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -472,7 +472,12 @@
 <td>n</td>
 </tr>
 </tbody></table>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--查看事物隔离级别</span></span><br><span class="line"><span class="keyword">SELECT</span> @<span class="variable">@TRANSACTION_ISOLATION</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--设置事物隔离级别</span></span><br><span class="line"><span class="keyword">SET</span> [SESSION<span class="operator">|</span><span class="keyword">GLOBAL</span>] TRANSACTION LEVEL &#123;READ UNCOMMITTED<span class="operator">|</span>READ COMMITTED <span class="operator">|</span> REPEATABLE READ <span class="operator">|</span> SERIALIZABLE&#125;</span><br><span class="line"><span class="comment">--SESSION是当前客户端会话有效</span></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">--查看事物隔离级别</span>
+<span class="token keyword">SELECT</span> @<span class="token variable">@TRANSACTION_ISOLATION</span><span class="token punctuation">;</span>
+
+<span class="token comment">--设置事物隔离级别</span>
+<span class="token keyword">SET</span> <span class="token punctuation">[</span><span class="token keyword">SESSION</span><span class="token operator">|</span><span class="token keyword">GLOBAL</span><span class="token punctuation">]</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">LEVEL</span> &#123;<span class="token keyword">READ</span> <span class="token keyword">UNCOMMITTED</span><span class="token operator">|</span><span class="token keyword">READ</span> <span class="token keyword">COMMITTED</span> <span class="token operator">|</span> <span class="token keyword">REPEATABLE</span> <span class="token keyword">READ</span> <span class="token operator">|</span> <span class="token keyword">SERIALIZABLE</span>&#125;
+<span class="token comment">--SESSION是当前客户端会话有效</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -1088,7 +1093,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 
 </body>
